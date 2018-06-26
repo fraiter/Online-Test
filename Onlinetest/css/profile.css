@@ -1,0 +1,36 @@
+.note-category{
+	display: inline-block;
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 784px;
+}
+.form-control{
+	border-color: #b6bec5;
+}
+select.form-control:not([size]):not([multiple]) {
+    height: 42px;
+}
+.idnumber{
+	width: 20%;
+}
+.form1{
+	padding: 10px;
+}
+.placeholder {
+ 	height: 207px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../images/userlogo.png');
+}
+button, input, select, textarea {
+    font: inherit;
+    margin: 5px;
+}

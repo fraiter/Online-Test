@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Tell the browser to be responsive to screen width -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- Favicon icon -->
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+	<title>Online Test</title>
+	<!-- Bootstrap Core CSS -->
+	<link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link href="css/helper.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/profile.css">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:** -->
+    <!--[if lt IE 9]>
+    <script src="https:**oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https:**oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<style>
+.btnedit
+{
+	font-size: 20px;color: #00BFFF;
+}
+.btndelete
+{
+	font-size: 20px;color: #FF8C00;
+}
+.btnview
+{
+	font-size: 20px;color:black;
+}
+</style>
+</head>
+<body class="fix-header fix-sidebar">
+	<!-- Preloader - style you can find in spinners.css -->
+	<div class="preloader">
+		<svg class="circular" viewBox="25 25 50 50">
+			<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+		</div>
+		<!-- Main wrapper  -->
+		<div id="main-wrapper">
+			<!-- header header  -->
+			<div class="header">
+				<nav class="navbar top-navbar navbar-expand-md navbar-light">
+					<!-- Logo -->
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#">
+							<!-- Logo icon -->
+							<b><img src="images/logo.png" alt="homepage" class="dark-logo" /></b>
+							<!--End Logo icon -->
+							<!-- Logo text -->
+							<span><img src="images/logo-text.png" alt="homepage" class="dark-logo" /></span>
+						</a>
+					</div>
+					<!-- End Logo -->
+					<div class="navbar-collapse">
+						<!-- toggle and nav items -->
+						<ul class="navbar-nav mr-auto mt-md-0">
+							<!-- This is  -->
+							<li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted  " href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+
+						</ul>
+						<!-- User profile and search -->
+						<ul class="navbar-nav my-lg-0">
+							<!-- Profile -->
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle text-muted  " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/users/5.jpg" alt="user" class="profile-pic" /></a>
+								<div class="dropdown-menu dropdown-menu-right animated zoomIn">
+									<ul class="dropdown-user">
+										<li><a href="#"><i class="ti-user"></i> Profile</a></li>
+										<li><a href="#"><i class="ti-wallet"></i> Balance</a></li>
+										<li><a href="#"><i class="ti-email"></i> Inbox</a></li>
+										<li><a href="#"><i class="ti-settings"></i> Setting</a></li>
+										<li><a href="login.html"><i class="fa fa-power-off"></i> Logout</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<!-- End header header -->
+			<!-- table -->
+			<section class="node_category container">
+				<div class="form1">
+					<h3> User details</h3>
+					<form>
+
+						<a href="#"><div class="placeholder">
+							<input type="file" id="selectedFile" style="display: none;" />
+							<input type="button" value="images..." onclick="document.getElementById('selectedFile').click();" /><div class="myimage"></div>
+						</div></a>
+						<div class="form-group idnumber "">
+							<label for="inputZip">ID Number</label>
+							<input type="text" class="form-control" id="inputZip" disabled="disabled" placeholder="0123456789">
+						</div>
+						<div class="form-group">
+							<label for="inputEmail4">Email</label>
+							<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+						</div>
+						<div class="form-row">
+
+							<div class="form-group col-md-6">
+								<label for="inputPassword4">Currnet Password</label>
+								<input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+							</div>	
+							<div class="form-group col-md-6">
+								<label for="inputPassword4">New Password</label>
+								<input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+							</div>
+
+						</div>
+						<div class="form-group">
+							<label for="inputAddress">Permanent Address</label>
+							<input type="text" class="form-control" id="inputAddress" placeholder="1234 main st district">
+						</div>
+						<div class="form-group">
+							<label for="inputAddress2">Current Address</label>
+							<input type="text" class="form-control" id="inputAddress2" placeholder="1234 main st district">
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="inputCity">City</label>
+								<input type="text" class="form-control" id="inputCity">
+							</div>
+							<div class="form-group col-md-4">
+								<label for="inputState">Nationality</label>
+								<select id="inputState" class="form-control">
+									<option selected>Choose...</option>
+									<option>Việt Nam</option>
+									<option>American</option>
+									<option>.....</option>
+								</select>
+							</div>
+							<div class="form-group col-md-2">
+								<label for="inputZip">Identity Card</label>
+								<input type="text" class="form-control" id="inputZip">
+							</div>
+						</div>
+
+						<button type="submit" class="btn btn-primary">Save</button>
+					</form>
+				</div>
+			</section>
+			<!-- End table -->
+			<!-- All Jquery -->
+			<script src="js/lib/jquery/jquery.min.js"></script>
+			<!-- Bootstrap tether Core JavaScript -->    
+			<script src="js/lib/bootstrap/bootstrap.bundle.min.js"></script>
+			<!-- slimscrollbar scrollbar JavaScript -->
+			<script src="js/jquery.slimscroll.js"></script>
+			<!--Menu sidebar -->
+			<script src="js/sidebarmenu.js"></script>
+			<!--stickey kit -->
+			<script src="js/lib/sticky-kit-master/dist/sticky-kit.min.js"></script>
+			<!--Custom JavaScript -->
+			<script src="js/scripts.js"></script>
+
+
+			<script src="js/lib/datatables/datatables.min.js"></script>
+			<script src="js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+			<script src="js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
+			<script src="js/lib/datatables/cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+			<script src="js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+			<script src="js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+			<script src="js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
+			<script src="js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
+		</body>
+
+		</html>

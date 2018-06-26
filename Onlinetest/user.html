@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <title>Test-Student</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/helper.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="fix-header fix-sidebar">
+    <!-- Preloader - style you can find in spinners.css -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+    </div>
+    <!-- Main wrapper  -->
+    <div id="main-wrapper">
+        <!-- header header  -->
+        <div class="header">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- Logo -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <!-- Logo icon -->
+                        <b><img src="images/logo.png" alt="homepage" class="dark-logo" /></b>
+                        <!--End Logo icon -->
+                        <!-- Logo text -->
+                        <span><img src="images/logo-text.png" alt="homepage" class="dark-logo" /></span>
+                    </a>
+                </div>
+                <!-- End Logo -->
+                <div class="navbar-collapse">
+                    <!-- toggle and nav items -->
+                    <ul class="navbar-nav mr-auto mt-md-0">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted  " href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+                        <li class="nav-item m-l-10"> <a class="nav-link sidebartoggler hidden-sm-down text-muted  " href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                    </ul>
+                    <!-- User profile and search -->
+                    <ul class="navbar-nav my-lg-0">
+                        <!-- Profile -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted  " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/users/5.jpg" alt="user" class="profile-pic" /></a>
+                            <div class="dropdown-menu dropdown-menu-right animated zoomIn">
+                                <ul class="dropdown-user">
+                                    <li><a href="profile.html"><i class="ti-user"></i> Profile</a></li>
+                                    <li><a href="#"><i class="ti-wallet"></i> Balance</a></li>
+                                    <li><a href="#"><i class="ti-email"></i> Inbox</a></li>
+                                    <li><a href="#"><i class="ti-settings"></i> Setting</a></li>
+                                    <li><a href="login.html"><i class="fa fa-power-off"></i> Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- End header header -->
+        <!-- Left Sidebar  -->
+        <div class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="nav-devider"></li>
+                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-table"></i><span class="hide-menu">Home</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="user.html">User</a></li>
+                                <li><a href="user-student.html">Student</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </div>
+        <!-- End Left Sidebar  -->
+        <!-- Page wrapper  -->
+        <div class="page-wrapper">
+            <!-- Container fluid  -->
+            <div class="container-fluid">
+                <!-- Start Page Content -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="table-responsive m-t-40">
+                                    <div style="text-align:right;">
+
+                                       <div style="text-align:right;"><h3 style="text-align: left;">User</h3><button type="button" class="btn btn-success" id="btnAdd">Add</button></div>                              
+                                    </div>
+                                    <table id="myTable" class="table table-bordered table-striped">
+                                         <thead>
+                                            <tr>
+                                                <th style="width: 5%;">STT</th>
+                                                <th>Account</th>
+                                                <th>LastName</th>
+                                                <th>FirstName</th>
+                                                <th>Gender</th>
+                                                <th>Email</th>
+                                                <th>Phone</th>
+                                                <th>Actives</th>
+                                                <th style="width: 6%;">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr id="1">
+                                                <td></td>
+                                                <td id="name">Accoun1</td>
+                                                <td>Pill</td>
+                                                <td>Jonh</td>
+                                                <td>Female</td>
+                                                <td>abc@gmail.com</td>
+                                                <td>0969874264</td>
+                                                <td>True</td>
+                                                <td><p><i data-group=grpview style="margin-right: 5px;" class="fa fa-eye btnview" aria-hidden="true"></i><i  data-group=grpEdit  class="fa fa-pencil-square btnedit" aria-hidden="true"  name="btnEdit" ></i>
+                                                <i data-group=grpDelete data-title="Delete"  class="fa fa-trash-o btndelete" aria-hidden="true"></i></p></td>
+                                            </tr>
+                                            <tr id="2">
+                                                 <td></td>
+                                                <td id="name">Accoun2</td>
+                                                <td>Dani Well</td>
+                                                <td>Beck</td>
+                                                <td>Female</td>
+                                                <td>abc@gmail.com</td>
+                                                <td>0969874264</td>
+                                                <td>True</td>
+                                                <td><p><i data-group=grpview style="margin-right: 5px;" class="fa fa-eye btnview" aria-hidden="true"></i><i  data-group=grpEdit  class="fa fa-pencil-square btnedit" aria-hidden="true"  name="btnEdit" ></i>
+                                                <i data-group=grpDelete data-title="Delete"  class="fa fa-trash-o btndelete" aria-hidden="true"></i></p></td>
+                                            </tr>
+                                            <tr id="3">
+                                                <td></td>
+                                                <td id="name">Accoun3</td>
+                                                <td>Robert</td>
+                                                <td>Jack</td>
+                                                <td>Female</td>
+                                                <td>abc@gmail.com</td>
+                                                <td>0969874264</td>
+                                                <td>True</td>
+                                                <td><p><i data-group=grpview style="margin-right: 5px;" class="fa fa-eye btnview" aria-hidden="true"></i><i  data-group=grpEdit  class="fa fa-pencil-square btnedit" aria-hidden="true"  name="btnEdit" ></i>
+                                                <i data-group=grpDelete data-title="Delete"  class="fa fa-trash-o btndelete" aria-hidden="true"></i></p></td>
+                                            </tr>
+                                            <tr id="4">
+                                                <td></td>
+                                                <td id="name">Accoun4</td>
+                                                <td>Angel</td>
+                                                <td>Dimaria</td>
+                                                <td>Female</td>
+                                                <td>abc@gmail.com</td>
+                                                <td>0969874264</td>
+                                                <td>True</td>
+                                                <td><p><i data-group=grpview style="margin-right: 5px;" class="fa fa-eye btnview" aria-hidden="true"></i><i  data-group=grpEdit  class="fa fa-pencil-square btnedit" aria-hidden="true"  name="btnEdit" ></i>
+                                                <i data-group=grpDelete data-title="Delete"  class="fa fa-trash-o btndelete" aria-hidden="true"></i></p></td>
+                                            </tr> 
+                                            <tr id="5">
+                                             <td></td>
+                                                <td id="name">Accoun5</td>
+                                                <td>Cristiano</td>
+                                                <td>Ronaldo</td>
+                                                <td>Female</td>
+                                                <td>abc@gmail.com</td>
+                                                <td>0969874264</td>
+                                                <td>True</td>
+                                                <td><p><i data-group=grpview style="margin-right: 5px;" class="fa fa-eye btnview" aria-hidden="true"></i><i  data-group=grpEdit  class="fa fa-pencil-square btnedit" aria-hidden="true"  name="btnEdit" ></i>
+                                                <i data-group=grpDelete data-title="Delete"  class="fa fa-trash-o btndelete" aria-hidden="true"></i></p></td>
+                                            </tr>
+                                            <tr id="6">
+                                                 <td></td>
+                                                <td id="name">Accoun6</td>
+                                                <td>Back</td>
+                                                <td>Dani</td>
+                                                <td>Male</td>
+                                                <td>abc@gmail.com</td>
+                                                <td>0969874264</td>
+                                                <td>True</td>
+                                                <td><p><i data-group=grpview style="margin-right: 5px;" class="fa fa-eye btnview" aria-hidden="true"></i><i  data-group=grpEdit  class="fa fa-pencil-square btnedit" aria-hidden="true"  name="btnEdit" ></i>
+                                                <i data-group=grpDelete data-title="Delete"  class="fa fa-trash-o btndelete" aria-hidden="true"></i></p></td>
+                                            </tr> 
+                                            <tr id="6">
+                                                 <td></td>
+                                                <td id="name">Accoun7</td>
+                                                <td>Leo</td>
+                                                <td>Messi</td>
+                                                <td>Male</td>
+                                                <td>abc@gmail.com</td>
+                                                <td>0969874264</td>
+                                                <td>True</td>
+                                                <td><p><i data-group=grpview style="margin-right: 5px;" class="fa fa-eye btnview" aria-hidden="true"></i><i  data-group=grpEdit  class="fa fa-pencil-square btnedit" aria-hidden="true"  name="btnEdit" ></i>
+                                                <i data-group=grpDelete data-title="Delete"  class="fa fa-trash-o btndelete" aria-hidden="true"></i></p></td>
+                                            </tr>       
+                                            <tr id="6">
+                                                 <td></td>
+                                                <td id="name">Accoun7</td>
+                                                <td>Gonzalo</td>
+                                                <td>Higouin</td>
+                                                <td>Female</td>
+                                                <td>abc@gmail.com</td>
+                                                <td>0969874264</td>
+                                                <td>True</td>
+                                                <td><p><i data-group=grpview style="margin-right: 5px;" class="fa fa-eye btnview" aria-hidden="true"></i><i  data-group=grpEdit  class="fa fa-pencil-square btnedit" aria-hidden="true"  name="btnEdit" ></i>
+                                                <i data-group=grpDelete data-title="Delete"  class="fa fa-trash-o btndelete" aria-hidden="true"></i></p></td>
+                                            </tr>       
+                                            <tr id="6">
+                                                <td></td>
+                                                <td id="name">Accoun8</td>
+                                                <td>Romero</td>
+                                                <td>Pepe</td>
+                                                <td>Male</td>
+                                                <td>abc@gmail.com</td>
+                                                <td>0969874264</td>
+                                                <td>True</td>
+                                                <td><p><i data-group=grpview style="margin-right: 5px;" class="fa fa-eye btnview" aria-hidden="true"></i><i  data-group=grpEdit  class="fa fa-pencil-square btnedit" aria-hidden="true"  name="btnEdit" ></i>
+                                                <i data-group=grpDelete data-title="Delete"  class="fa fa-trash-o btndelete" aria-hidden="true"></i></p></td>
+                                            </tr>       
+                                            <tr id="6">
+                                                <td></td>
+                                                <td id="name">Accoun8</td>
+                                                <td>Sergio</td>
+                                                <td>Ramos</td>
+                                                <td>Female</td>
+                                                <td>abc@gmail.com</td>
+                                                <td>0969874264</td>
+                                                <td>True</td>
+                                                <td><p><i data-group=grpview style="margin-right: 5px;" class="fa fa-eye btnview" aria-hidden="true"></i><i  data-group=grpEdit  class="fa fa-pencil-square btnedit" aria-hidden="true"  name="btnEdit" ></i>
+                                                <i data-group=grpDelete data-title="Delete"  class="fa fa-trash-o btndelete" aria-hidden="true"></i></p></td>
+                                            </tr>       
+                                            <tr id="6">
+                                                 <td></td>
+                                                <td id="name">Accoun9</td>
+                                                <td>Robin</td>
+                                                <td>Ajax</td>
+                                                <td>Male</td>
+                                                <td>abc@gmail.com</td>
+                                                <td>0969874264</td>
+                                                <td>True</td>
+                                                <td><p><i data-group=grpview style="margin-right: 5px;" class="fa fa-eye btnview" aria-hidden="true"></i><i  data-group=grpEdit  class="fa fa-pencil-square btnedit" aria-hidden="true"  name="btnEdit" ></i>
+                                                <i data-group=grpDelete data-title="Delete"  class="fa fa-trash-o btndelete" aria-hidden="true"></i></p></td>
+                                            </tr>       
+                                            <tr id="6">
+                                                <td></td>
+                                                <td id="name">Accoun10</td>
+                                                <td>Robesto</td>
+                                                <td>Kaka</td>
+                                                <td>Female</td>
+                                                <td>abc@gmail.com</td>
+                                                <td>0969874264</td>
+                                                <td>True</td>
+                                                <td><p><i data-group=grpview style="margin-right: 5px;" class="fa fa-eye btnview" aria-hidden="true"></i><i  data-group=grpEdit  class="fa fa-pencil-square btnedit" aria-hidden="true"  name="btnEdit" ></i>
+                                                <i data-group=grpDelete data-title="Delete"  class="fa fa-trash-o btndelete" aria-hidden="true"></i></p></td>
+                                            </tr>       
+                                            <tr id="6">
+                                                 <td></td>
+                                                <td id="name">Accoun11</td>
+                                                <td>Angel</td>
+                                                <td>Jonh</td>
+                                                <td>Male</td>
+                                                <td>abc@gmail.com</td>
+                                                <td>0969874264</td>
+                                                <td>True</td>
+                                                <td><p><i data-group=grpview style="margin-right: 5px;" class="fa fa-eye btnview" aria-hidden="true"></i><i  data-group=grpEdit  class="fa fa-pencil-square btnedit" aria-hidden="true"  name="btnEdit" ></i>
+                                                <i data-group=grpDelete data-title="Delete"  class="fa fa-trash-o btndelete" aria-hidden="true"></i></p></td>
+                                            </tr>                       
+                                            <tr id="6">
+                                               <td></td>
+                                                <td id="name">Accoun12</td>
+                                                <td>Angel</td>
+                                                <td>Jonh</td>
+                                                <td>Male</td>
+                                                <td>abc@gmail.com</td>
+                                                <td>0969874264</td>
+                                                <td>True</td>
+                                                <td><p><i data-group=grpview style="margin-right: 5px;" class="fa fa-eye btnview" aria-hidden="true"></i><i  data-group=grpEdit  class="fa fa-pencil-square btnedit" aria-hidden="true"  name="btnEdit" ></i>
+                                                <i data-group=grpDelete data-title="Delete"  class="fa fa-trash-o btndelete" aria-hidden="true"></i></p></td>
+                                            </tr>       
+                                            <tr id="6">
+                                                <td></td>
+                                                <td id="name">Accoun13</td>
+                                                <td>Angel</td>
+                                                <td>Jonh</td>
+                                                <td>Female</td>
+                                                <td>abc@gmail.com</td>
+                                                <td>0969874264</td>
+                                                <td>True</td>
+                                                <td><p><i data-group=grpview style="margin-right: 5px;" class="fa fa-eye btnview" aria-hidden="true"></i><i  data-group=grpEdit  class="fa fa-pencil-square btnedit" aria-hidden="true"  name="btnEdit" ></i>
+                                                <i data-group=grpDelete data-title="Delete"  class="fa fa-trash-o btndelete" aria-hidden="true"></i></p></td>
+                                            </tr>       
+                                            <tr id="6">
+                                                <td></td>
+                                                <td id="name">Accoun14</td>
+                                                <td>Angel</td>
+                                                <td>Jonh</td>
+                                                <td>Male</td>
+                                                <td>abc@gmail.com</td>
+                                                <td>0969874264</td>
+                                                <td>True</td>
+                                                <td><p><i data-group=grpview style="margin-right: 5px;" class="fa fa-eye btnview" aria-hidden="true"></i><i  data-group=grpEdit  class="fa fa-pencil-square btnedit" aria-hidden="true"  name="btnEdit" ></i>
+                                                <i data-group=grpDelete data-title="Delete"  class="fa fa-trash-o btndelete" aria-hidden="true"></i></p></td>
+                                            </tr>       
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End PAge Content -->
+            </div>
+            <!-- End Container fluid  -->
+            <!-- footer -->
+            <!-- End footer -->
+        </div>
+        <!-- End Page wrapper  -->
+ <!--MODAL-->
+    <!-- The Modal -->
+    <div class="modal" id="myModal" role="dialog" data-backdrop="static">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Heading</h4>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+                <form>
+                     <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Account</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="inputEmail3" placeholder="Account">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">LastName</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="inputEmail3" placeholder="LastName">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">FirstName</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="inputEmail3" placeholder="FirstName">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Gender</label>
+                     <div class="col-sm-10">
+
+                         <div class="form-check form-check-inline">
+                               <input class="form-check-input"  type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                 <label class="form-check-label" >
+                                Female
+                                 </label>
+                        </div>
+                            <div class="form-check form-check-inline">
+                               <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                 <label class="form-check-label" >
+                                Male
+                                 </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                               <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                 <label class="form-check-label" >
+                                Other
+                                 </label>
+                            </div>
+                    </div>
+                    </div>
+
+                  <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="Email" class="form-control" id="inputPassword3" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Phone</label>
+                    <div class="col-sm-10">
+                      <input type="tel" class="form-control" id="inputPassword3" placeholder="Phone">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Active</label>
+                    <div class="col-sm-10">
+                      
+                         <div class="form-check form-check-inline">
+                               <input class="form-check-input"  type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                 <label class="form-check-label" >
+                                Yes
+                                 </label>
+                        </div>
+                            <div class="form-check form-check-inline">
+                               <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"  value="option1" checked>
+                                 <label class="form-check-label" >
+                                No
+                                 </label>
+                            </div>
+                    </div>
+                  </div>
+                </form>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+           <button type="submit" class="btn btn-primary bntSubmit">Submit</button>
+            <button name="" type="button" class="btn btn-danger" data-dismiss="modal" class="close">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--END MODAL-->
+    </div>
+    <!-- End Wrapper -->
+    <!-- All Jquery -->
+    <script src="js/lib/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->    
+    <script src="js/lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--stickey kit -->
+    <script src="js/lib/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/scripts.js"></script>
+
+
+    <script src="js/lib/datatables/datatables.min.js"></script>
+    <script src="js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+    <script src="js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
+    <script src="js/lib/datatables/cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+    <script src="js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+    <script src="js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+    <script src="js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
+    <script src="js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            var t = $("#myTable").DataTable({
+                columnDefs: [ {
+                    orderable: false,
+                    targets: [0, 8,7,6]                   
+                } ],
+                order: [[ 1, "asc" ]],
+                drawCallback: function( settings ) {
+                    bindEvents();
+                }
+            });
+
+            t.on('order.dt search.dt', function () {
+                t.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+                    cell.innerHTML = i+1;
+                });
+            }).draw();
+
+            function bindEvents() {
+                $("[data-group=grpEdit]").off('click').click(function(){                    
+                    $("#myModal .modal-title").text('Edit User');
+                     $('input').prop('disabled', false);
+                     $('.bntSubmit').prop('hidden',false);;
+                    $("#myModal").modal('show');
+                });
+                //disable view input-->
+                $("[data-group=grpview]").off('click').click(function(event) {
+                   $("#myModal .modal-title").text("View User");
+                        if($("#myModal .modal-title").text()=="View User")
+                            {
+                                    $('input').prop('disabled', true);
+                                    $('.bntSubmit').prop('hidden',true);
+                            }else
+                            {
+                                $('input').prop('disabled', true);
+                                $('.bntSubmit').prop('hidden',false);
+                            }
+
+                    $("#myModal").modal('show');
+                });
+
+
+                //alert btndelete
+            $('.btndelete').confirm({
+                    content: "Do you want to delete data?",
+                });
+                $('.btndelete').confirm({
+                    buttons: {
+                      //  hey: function(){
+                       //     location.href = this.$target.attr('href');
+                       // }
+                    }
+                });
+            //end alert delete
+            }
+            //btn add--
+            $("#btnAdd").click(function(){
+                $("#myModal .modal-title").text('Add New');
+                $("#myModal").modal('show');
+                 $('input').prop('disabled', false);
+                $('.bntSubmit').prop('hidden',false);;
+            });
+            //----           
+            
+        });
+    
+    </script>
+</body>
+
+</html>
